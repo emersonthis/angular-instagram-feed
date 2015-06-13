@@ -51,6 +51,8 @@ emersonthis.directive('instagramFeed', ['$http', '$compile', function($http, $co
 
 
         }
+        
+        element.addClass('ig-feed-wrap');
 
         $http.jsonp("https://api.instagram.com/v1/users/"+scope.userId+"/media/recent/?client_id="+scope.clientId+"&callback=JSON_CALLBACK")
             .success(
