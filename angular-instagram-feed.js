@@ -35,7 +35,7 @@ emersonthis.directive('instagramFeed', ['$http', '$compile', function($http, $co
                 if (!videoSrc) {
                     element.append( '<img class="ig-media ig-media--img" src="'+imgSrc+'" />' );
                 } else {
-                    element.append('<video controls class="ig-media ig-media--video"><source src="'+videoSrc+'" type="video/mp4">Your browser does not support the video tag... which sucks!</video>');
+                    element.append('<video controls class="ig-media ig-media--video" poster="'+imgSrc+'"><source src="'+videoSrc+'" type="video/mp4">Your browser does not support the video tag... which sucks!</video>');
                 }
             }
 
